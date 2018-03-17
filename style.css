@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    background-color: #EFBD62;
+    color: #4D645D;
+}
+
+.container {
+    width: 100%;
+    font-size: 20px;
+}
+
+.container a {
+    text-decoration: none;
+    color: #4D645D;
+}
+
+ol {
+    margin: 30px;
+}
