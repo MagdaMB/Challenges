@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    background-color: #D4D7D9;
+}
+
+.container {
+    width: 100%;
+}
+
+
+
+.block__text {
+    background-color: #FFFFFF;
+    width: 50%;    
+}
+
+.block__img img {
+    width: 100%;
+    min-width: 168px;
+    max-width: 350px; 
+}
+
+.block__a a {
+    text-decoration: none;
+    color: #46494f;
+    font-weight: bold;
+}
+
+.ribboncontainer {
+    border: 10px solid #d8dee5;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    font-size: 13px;
+    color: #46494f;
+    line-height: 1.54em;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    padding: 78px 12px 15px;
+}
+
+.ribboncontainer .ribbon {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    right: -20px;
+}
+
+.ribboncontainer .ribbon::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 30px;
+    background-color: #F35E5E;
+    width: 19px;
+    height: 19px;
+    -ms-transform: skewY(45deg);
+    -webkit-transform: skewY(45deg);
+    transform: skewY(45deg);
+    z-index: 1;
+}
+
+.ribboncontainer .ribbon::after {
+    content: ' ';
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background-color: #F35E5E;
+    width: 19px;
+    height: 19px;
+    -ms-transform: skewY(-45deg);
+    -webkit-transform: skewY(-45deg);
+    transform: skewY(-45deg);
+    z-index: 1;
+}
+
+.ribboncontainer .ribbon h2 {
+    background-color: #C32828;
+    color: #46494f;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+}
+
+
+
+@media (min-width: 400px) {
+	.container {margin: 0 auto}
+}
+
+@media (min-width: 768px) {
+    .container {display: flex; flex-direction: row; justify-content: center; align-items: center;}
+    .block {display: flex; flex-direction: row; justify-content: center; align-items: center}
+    .block__img {display: flex; justify-content: center;}
+    .block__img img {width: 80px; height: 200px;}
+    .block__text {position: relative;}
+}
