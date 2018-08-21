@@ -79,6 +79,7 @@ body {
     height: 50%;
     margin-top: 20px;
 }
+
 .rightPart {
     position: absolute;
     left: 65%;
@@ -90,11 +91,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: circle 4s ease-in-out infinite 1s; 
+}
+
+@keyframes circle {
+    0% {
+        background: #543159;
+    }
+    100% {
+        transform: translate(-130px, 0);
+        background: #95DAFB;
+    }
 }
 
 .center {
     width: 35%;
     height: 40%;
     border-radius: 50%;
-    background: #68B8E3;
+    background: #95DAFB;
 }
